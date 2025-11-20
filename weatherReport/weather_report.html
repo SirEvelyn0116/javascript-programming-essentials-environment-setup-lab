@@ -6,11 +6,21 @@
 <body>
    <h1>Weather Report</h1>
 
-  <form id="weatherForm">
+  <form id="weatherFormByCity">
     <label for="city">Enter City:</label>
     <input type="text" id="city" name="city">
     <button type="submit">Get Weather</button>
   </form>
+
+  <form id="weatherFormByCoordinates">
+    <label for="latitude">Enter Lattitude:</label>
+    <input type="number" id="latitude" name="latitude" step="any" min="-90" max="90">
+
+    <label for="longitude:">Longitude</label>
+    <input type="number" id="longitude" name="longitude" step="any" min="-180" max="180">
+  </form>
+
+  
 
   <div id="weatherInfo"></div>
 <script src="./weather_report.js"></script>
